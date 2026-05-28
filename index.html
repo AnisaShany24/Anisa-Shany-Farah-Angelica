@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anisa Shany Farah A — UI/UX Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-logo">AF.</div>
+  <ul class="nav-links">
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#skills">Keahlian</a></li>
+    <li><a href="#timeline">Pengalaman</a></li>
+    <li><a href="#portfolio">Portofolio</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn"><i class="fas fa-moon"></i></button>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" class="mob-link">Tentang</a>
+  <a href="#skills" class="mob-link">Keahlian</a>
+  <a href="#timeline" class="mob-link">Pengalaman</a>
+  <a href="#portfolio" class="mob-link">Portofolio</a>
+  <a href="#contact" class="mob-link">Kontak</a>
+</div>
+
+<header id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid" id="heroGrid"></div>
+  <div class="p-blob" style="width:500px;height:500px;background:rgba(124,92,252,0.07);top:-100px;right:-80px;"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">Available for Paper Research</div>
+      <h1 class="hero-name">Anisa Shany<br><span> Farah A</span></h1>
+      <p class="hero-tagline"><span id="typing-text"></span><span class="typing-cursor"></span></p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hubungi Saya</a>
+        <a href="#portfolio" class="btn btn-outline"><i class="fas fa-eye"></i> Lihat Karya</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-wrap">
+        <div class="avatar-ring"></div>
+        <div class="avatar-placeholder">
+          <img src="assets/foto2.jpeg" alt="Avatar">
+        </div>
+        <div class="float-card c1"><i class="fab fa-researchgate"></i><span>Paper Research</span></div>
+        <div class="float-card c2"><i class="fas fa-palette"></i><span>Creative Ideas</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="divider"></div>
+<main>
+
+<!-- ABOUT -->
+<div class="sec-wrap" id="about">
+  <div class="about-grid">
+    <div class="about-img-box reveal-l">
+      <div class="about-img-inner">
+        <img src="assets/foto.jpeg" alt="Profile Photo">
+      </div>
+      <div class="about-deco"><div class="dn">2+</div><div class="dl">Tahun Aktif</div></div>
+    </div>
+    <div class="reveal-r">
+      <p class="section-label">Tentang Saya</p>
+      <h2 class="section-title">Crafting digital<br><span>experiences</span></h2>
+      <div class="about-content">
+        <p>
+          Halo! Saya Anisa Shany Farah Angelica, seorang UI/UX Designer yang
+          berfokus pada desain antarmuka modern, clean, dan user-friendly.
+          Saya senang menciptakan pengalaman digital yang tidak hanya indah,
+          tetapi juga nyaman digunakan.
+        </p>
+      </div>
+      <div class="stats-row stagger">
+        <div class="stat-box"><div class="stat-num" data-count="12">0</div><div class="stat-lbl">Proyek Selesai</div></div>
+        <div class="stat-box"><div class="stat-num" data-count="5">0</div><div class="stat-lbl">Sertifikat</div></div>
+        <div class="stat-box"><div class="stat-num" data-count="3">0</div><div class="stat-lbl">Tahun Exp.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<div class="skills-bg" style="position:relative;overflow:hidden;">
+  <div class="p-blob" style="width:380px;height:380px;background:rgba(56,189,248,0.06);bottom:-80px;left:-80px;"></div>
+  <div class="sec-wrap" id="skills">
+    <div class="reveal" style="text-align:center;">
+      <p class="section-label">Keahlian</p>
+      <h2 class="section-title">Design <span>Skills</span> & Tools</h2>
+      <p class="section-sub" style="margin:0 auto 2rem;">Kemampuan teknis yang saya kuasai dan tools yang saya gunakan sehari-hari.</p>
+    </div>
+    <div class="skills-tabs stagger reveal">
+      <button class="tab-btn active" data-tab="uiux">UI/UX</button>
+      <button class="tab-btn" data-tab="frontend">Frontend</button>
+      <button class="tab-btn" data-tab="backend">Backend</button>
+      <button class="tab-btn" data-tab="tools">Tools</button>
+      <button class="tab-btn" data-tab="soft">Soft Skills</button>
+    </div>
+    <div class="skill-group active" id="tab-uiux">
+      <div class="skill-bars">
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">UI/UX Design</span><span class="skill-bar-pct">95%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">Wireframing</span><span class="skill-bar-pct">85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">Mobile App Design</span><span class="skill-bar-pct">80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">Prototype Design</span><span class="skill-bar-pct">70%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div></div>
+      </div>
+    </div>
+    <div class="skill-group" id="tab-frontend">
+      <div class="skill-bars">
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">HTML/CSS</span><span class="skill-bar-pct">90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">JavaScript</span><span class="skill-bar-pct">85%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">React</span><span class="skill-bar-pct">80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">Responsive Design</span><span class="skill-bar-pct">90%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div></div>
+      </div>
+    </div>
+    <div class="skill-group" id="tab-backend">
+      <div class="skill-bars">
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">Node.js / Express</span><span class="skill-bar-pct">80%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">PHP / Laravel</span><span class="skill-bar-pct">72%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">MySQL / PostgreSQL</span><span class="skill-bar-pct">75%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">REST API Design</span><span class="skill-bar-pct">82%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div></div>
+        <div class="skill-bar-item"><div class="skill-bar-head"><span class="skill-bar-name">MongoDB</span><span class="skill-bar-pct">65%</span></div><div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div></div>
+      </div>
+    </div>
+    <div class="skill-group" id="tab-tools">
+      <div class="icon-grid stagger">
+        <div class="icon-card"><i class="fab fa-figma"></i><span>Figma</span></div>
+        <div class="icon-card"><i class="fas fa-pen-ruler"></i><span>Wireframe</span></div>
+        <div class="icon-card"><i class="fas fa-mobile-screen"></i><span>Mobile UI</span></div>
+        <div class="icon-card"><i class="fas fa-object-group"></i><span>Prototype</span></div>
+        <div class="icon-card"><i class="fas fa-palette"></i><span>Color Theory</span></div>
+        <div class="icon-card"><i class="fas fa-layer-group"></i><span>Design System</span></div>
+        <div class="icon-card"><i class="fas fa-bezier-curve"></i><span>User Flow</span></div>
+        <div class="icon-card"><i class="fas fa-photo-film"></i><span>Mockup</span></div>
+        <div class="icon-card"><i class="fab fa-git-alt"></i><span>Git</span></div>
+        <div class="icon-card"><i class="fas fa-code"></i><span>vs code</span></div>
+      </div>
+    </div>
+    <div class="skill-group" id="tab-soft">
+      <div class="icon-grid stagger">
+        <div class="icon-card"><i class="fas fa-comments"></i><span>Komunikasi</span></div>
+        <div class="icon-card"><i class="fas fa-users"></i><span>Teamwork</span></div>
+        <div class="icon-card"><i class="fas fa-lightbulb"></i><span>Problem Solving</span></div>
+        <div class="icon-card"><i class="fas fa-clock"></i><span>Time Mgmt</span></div>
+        <div class="icon-card"><i class="fas fa-sync"></i><span>Adaptif</span></div>
+        <div class="icon-card"><i class="fas fa-chalkboard-teacher"></i><span>Mentoring</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- TIMELINE -->
+<div class="sec-wrap" id="timeline">
+  <div class="reveal">
+    <p class="section-label">Perjalanan</p>
+    <h2 class="section-title">Pendidikan &<br><span>Pengalaman</span></h2>
+    <p class="section-sub">Riwayat pendidikan dan pengalaman yang membentuk saya menjadi developer seperti sekarang.</p>
+  </div>
+  <div class="timeline">
+    <div class="t-item">
+      <div class="t-dot"></div>
+      <div class="t-card">
+        <div class="t-period">2024 — Sekarang</div>
+        <div class="t-title">S1 Sistem Informasi</div>
+        <div class="t-org">Universitas Internasional Semen Indonesia</div>
+        <div class="t-desc">Fokus pada UI/UX design, pengembangan antarmuka modern, dan pengalaman pengguna untuk aplikasi web dan mobile. IPK 3.75/4.00. Aktif dalam komunitas developer kampus.</div>
+      </div>
+    </div>
+    <div class="t-item">
+      <div class="t-dot"></div>
+      <div class="t-card">
+        <div class="t-period">2024 — Sekarang</div>
+        <div class="t-title">himpunan mahasiswa sistem informasi staf ahli riset dan teknologi</div>
+        <div class="t-org">Universitas Internasional Semen Indonesia</div>
+        <div class="t-desc">
+          Berkontribusi dalam pengembangan program kerja berbasis teknologi 
+          dan inovasi digital di lingkungan organisasi. Bertanggung jawab 
+          dalam riset teknologi, pengembangan ide kreatif, serta mendukung 
+          pelaksanaan kegiatan yang berkaitan dengan sistem informasi dan 
+          transformasi digital mahasiswa.
+        </div>
+      </div>
+    </div>
+    <div class="t-item">
+      <div class="t-dot"></div>
+      <div class="t-card">
+        <div class="t-period">Makassar 2025</div>
+        <div class="t-title">Juara Favorit Lomba Karya Tulis Ilmiah Tingkat Nasional Universitas Hassanuddin</div>
+        <div class="t-org">Monitoring Rute Menggunakan AIS</div>
+      </div>
+    </div>
+    <div class="t-item">
+      <div class="t-dot"></div>
+      <div class="t-card">
+        <div class="t-period">Jambi 2025</div>
+        <div class="t-title">Juara 1 Lomba Karya Ilmiah Tingkat Nasional</div>
+        <div class="t-org">Pemanfaatan Teripang dan Biji Nangka Sebagai Upaya Preventif Stunting</div>
+      </div>
+    </div>
+    <div class="t-item">
+      <div class="t-dot"></div>
+      <div class="t-card">
+        <div class="t-period">2021 — 2024</div>
+        <div class="t-title">SMA Negeri 1 Ngimbang</div>
+        <div class="t-org">Jurusan IPA — Lulus dengan predikat Sangat Memuaskan</div>
+        <div class="t-desc">Menjadi ketua Palang Merah Indonesia (PMI) dan aktif dalam kegiatan sosial dan pendidikan.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- PORTFOLIO -->
+<div class="sec-wrap" id="portfolio">
+  <div class="reveal" style="text-align:center;">
+    <p class="section-label">Portofolio</p>
+    <h2 class="section-title">Karya &<br><span>Proyek Terbaik</span></h2>
+    <p class="section-sub" style="margin:0 auto 2.5rem;">Beberapa proyek yang pernah saya kerjakan.</p>
+  </div>
+  <div class="portfolio-grid">
+
+    <div class="proj-card">
+      <div class="proj-thumb"><div class="proj-thumb-inner">
+        <img src="assets/juara1.jpeg" alt="Project Games">
+      </div>
+      <div class="proj-overlay"><a href="#" class="proj-link-btn"><i class="fas fa-external-link-alt"></i></a><a href="#" class="proj-link-btn" style="background:var(--surface2)"><i class="fab fa-github"></i></a></div></div>
+      <div class="proj-body">
+        <div class="proj-tags">
+          <span class="tag">Scientific Research</span>
+          <span class="tag">Health Innovation</span>
+          <span class="tag">National Winner</span>
+        </div>
+
+        <div class="proj-name">
+          Pemanfaatan Teripang dan Biji Nangka Sebagai Upaya Preventif Stunting
+        </div>
+        
+        <div class="proj-desc">
+            Proyek karya ilmiah tingkat nasional yang membahas inovasi pangan berbasis sumber daya lokal sebagai upaya preventif stunting. Penelitian ini berhasil meraih Juara 1 Lomba Karya Ilmiah Tingkat Nasional 2025 di Jambi.
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-thumb"><div class="proj-thumb-inner">
+        <img src="assets/juarafav.jpeg" alt="Project Games">
+      </div>
+      <div class="proj-overlay"><a href="#" class="proj-link-btn"><i class="fas fa-external-link-alt"></i></a><a href="#" class="proj-link-btn" style="background:var(--surface2)"><i class="fab fa-github"></i></a></div></div>
+      <div class="proj-body">
+        <div class="proj-tags">
+          <span class="tag">AIS Technology</span>
+        </div>
+
+        <div class="proj-name">
+          Monitoring Rute Menggunakan AIS
+        </div>
+        
+        <div class="proj-desc">
+            Proyek karya tulis ilmiah mengenai pemanfaatan teknologi Automatic Identification System (AIS) untuk monitoring rute pelayaran secara real-time guna meningkatkan keamanan dan efisiensi transportasi laut. Proyek ini meraih Juara Favorit Lomba Karya Tulis Ilmiah Tingkat Nasional Universitas Hasanuddin 2025.
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-thumb"><div class="proj-thumb-inner">
+        <img src="assets/PosterDashboard.png" alt="Project Thumbnail">
+      </div>
+      <div class="proj-overlay"><a href="#" class="proj-link-btn"><i class="fas fa-external-link-alt"></i></a><a href="#" class="proj-link-btn" style="background:var(--surface2)"><i class="fab fa-github"></i></a></div></div>
+      <div class="proj-body">
+        <div class="proj-tags">
+          <span class="tag">Data Visualisai</span>
+          <span class="tag">Dashboard</span>
+          <span class="tag">Semester 3</span>
+        </div>
+        <div class="proj-name">
+          Proyek Visualisasi & Analisis Data
+        </div>
+        <div class="proj-desc">
+           Proyek semester 3 yang berfokus pada visualisasi dan analisis data menggunakan dashboard interaktif untuk menampilkan informasi secara lebih jelas, modern, dan mudah dipahami pengguna.
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-thumb"><div class="proj-thumb-inner">
+        <img src="assets/games.png" alt="Project Games">
+      </div>
+      <div class="proj-overlay"><a href="#" class="proj-link-btn"><i class="fas fa-external-link-alt"></i></a><a href="#" class="proj-link-btn" style="background:var(--surface2)"><i class="fab fa-github"></i></a></div></div>
+      <div class="proj-body">
+        <div class="proj-tags">
+          <span class="tag">Java</span>
+          <span class="tag">Game Development</span>
+          <span class="tag">Semester 3</span>
+        </div>
+
+        <div class="proj-name">
+          SnakeTech Adventure
+        </div>
+        
+        <div class="proj-desc">
+            Proyek game edukasi berbasis Java yang dikembangkan pada semester 3 
+            untuk mengubah materi dasar teknologi informasi menjadi permainan 
+            interaktif dan menyenangkan. Game ini memiliki beberapa level, sistem 
+            misi, serta tantangan yang membantu pemain memahami konsep perangkat 
+            komputer, input device, dan materi IT lainnya.
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-thumb"><div class="proj-thumb-inner">
+        <img src="assets/pendanaan.jpeg" alt="Pendanaan">
+      </div>
+      <div class="proj-overlay"><a href="#" class="proj-link-btn"><i class="fas fa-external-link-alt"></i></a><a href="#" class="proj-link-btn" style="background:var(--surface2)"><i class="fab fa-github"></i></a></div></div>
+      <div class="proj-body">
+        <div class="proj-tags">
+          <span class="tag">PPK Ormawa</span>
+          <span class="tag">Digital Literacy</span>
+          <span class="tag">Community Project</span>
+        </div>
+
+        <div class="proj-name">
+          POLA KEDUNG — Program Literasi Digital Multigenerasi
+        </div>
+        
+        <div class="proj-desc">
+            Proyek pengabdian masyarakat berbasis literasi digital yang bertujuan 
+            meningkatkan pemahaman teknologi bagi berbagai generasi di Desa Kedungrejo. 
+            Program ini berfokus pada edukasi keamanan digital, pemanfaatan internet, 
+            serta pengenalan teknologi untuk mendukung masyarakat desa yang lebih mandiri 
+            dan tangguh di era digital. Proyek ini juga berhasil memperoleh pendanaan 
+            <b>PPK Ormawa</b> sebagai bentuk dukungan terhadap inovasi dan kontribusi 
+            mahasiswa dalam pemberdayaan masyarakat.
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-thumb"><div class="proj-thumb-inner">
+        <img src="assets/program.jpeg" alt="Pendanaan">
+      </div>
+      <div class="proj-overlay"><a href="#" class="proj-link-btn"><i class="fas fa-external-link-alt"></i></a><a href="#" class="proj-link-btn" style="background:var(--surface2)"><i class="fab fa-github"></i></a></div></div>
+      <div class="proj-body">
+        <div class="proj-tags">
+          <span class="tag">Volunteer</span>
+          <span class="tag">Community Empowerment</span>
+        </div>
+
+        <div class="proj-name">
+          Program volunteer community Empowerment Djarum beasiswa plus 2025
+        </div>
+        
+        <div class="proj-desc">
+            Kegiatan merupakan salah satu kegiatan volunteer dari beswan Djarum community. Kegiatan ini merujuk pada penguatan kapasitas sumber daya manusia seperti, time management, observasi pemberdayaan ekonomi/umkm, dan pelatihan kerja kepada kaum rentan seperti membuat ecoprint, menganyam dll.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<div class="contact-bg" style="position:relative;overflow:hidden;">
+  <div class="p-blob" style="width:340px;height:340px;background:rgba(192,132,252,0.07);top:50%;right:-40px;transform:translateY(-50%);"></div>
+  <div class="sec-wrap" id="contact">
+    <div class="reveal" style="text-align:center;margin-bottom:2.5rem;">
+      <p class="section-label">Kontak</p>
+      <h2 class="section-title">Mari <span>Berkolaborasi</span></h2>
+      <p class="section-sub" style="margin:0 auto;">Ada proyek menarik? Jangan ragu untuk menghubungi saya.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-l">
+        <div class="c-item"><div class="c-icon"><i class="fas fa-envelope"></i></div><div class="c-text"><h4>Email</h4><p>anisa.angelica24@student.uisi.ac.id</p></div></div>
+        <div class="c-item"><div class="c-icon"><i class="fas fa-phone"></i></div><div class="c-text"><h4>Telepon</h4><p>082139380319</p></div></div>
+        <div class="c-item"><div class="c-icon"><i class="fas fa-map-marker-alt"></i></div><div class="c-text"><h4>Lokasi</h4><p>Lamongan, Jawa Timur</p></div></div>
+        <div>
+          <p style="font-size:0.82rem;color:var(--text3);margin-bottom:0.65rem;">Temukan saya di:</p>
+          <div class="social-row">
+            <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label>Nama Lengkap *</label><input type="text" id="fname" placeholder="John Doe"><span class="form-error" id="err-fname"></span></div>
+            <div class="form-group"><label>Email *</label><input type="email" id="femail" placeholder="john@email.com"><span class="form-error" id="err-femail"></span></div>
+          </div>
+          <div class="form-group"><label>Subjek *</label><input type="text" id="fsubject" placeholder="Diskusi proyek / kolaborasi..."><span class="form-error" id="err-fsubject"></span></div>
+          <div class="form-group"><label>Pesan *</label><textarea id="fmsg" rows="5" placeholder="Ceritakan proyek atau ide Anda..."></textarea><span class="form-error" id="err-fmsg"></span></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" id="submitBtn"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+          <div class="form-success" id="formSuccess"><i class="fas fa-check-circle"></i> Pesan berhasil terkirim! Saya akan segera membalas.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="footer-brand">Anisa Shany Farah Angelica</div>
+  <p class="footer-copy">© 2026 Anisa Shany Farah Angelica. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
